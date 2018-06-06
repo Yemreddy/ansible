@@ -1,0 +1,14 @@
+--- 
+- 
+  hosts: tomcat
+  remote_user: root
+  tasks: 
+    - 
+      apt: "name=httpd state=latest"
+      name: "Install httpd"
+    - 
+      apt: "name=php state=latest"
+      name: "Install php"
+    - 
+      apt: "name=wget state=latest"
+      name: "Install wget"
